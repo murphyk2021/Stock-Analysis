@@ -6,5 +6,6 @@ The next activity we asked the program to look through all of the data and calcu
 
 Finally, in our challenge excercise we were asked to rewrite our code in such a way that it would run quicker and more efficiently.  One way to achieve that goal is to reduce the number of times that we are looping through each row of data.
 
-##Results
-Below 
+## Results
+Below is the code we created as we worked through the module.  You can see there are two loops in this code-one inside of the other.
+
