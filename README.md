@@ -10,7 +10,7 @@ Finally, in our challenge excercise we were asked to rewrite our code in such a 
 ## Results
 Below is the code we created as we worked through the module.  You can see there are two loops in this code-one inside of the other.
 ![Nested Loop Code](https://github.com/murphyk2021/Stock-Analysis/blob/da980120bd370356cf578fb15c14ba30e84f1fca/module_VBA_Code.png)
-The first/outer loop will go through each of our tickers and apply the conditions.  The second/inner loop will go through our dataset and apply the information to each of the tickers.
+The first/outer/red loop will go through each of our **tickers** and apply the conditions.  The second/inner/purple loop will go through **each row in our dataset** and apply the information to each of the tickers.
 
 This is what will happen when we apply these instructions to the **first** ticker in our array *(i=0).*
   - Define the string value for the variables:  **ticker** = “AY” (from our previously defined array)
