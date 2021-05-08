@@ -23,7 +23,9 @@ This is what will happen when we apply these instructions to the **first** ticke
   - Record the values for ticker, totalVolume, and Return in the worksheet
   - Run Same sequence on the next ticker in our array.
 
-When we use this code, it means we are asking the program to read our 3013 data points for each ticker.  That means it has to read **36,156** cells!
-Use an Array + Not nested formula means we only read the 3013 data points once.
+
+## Summary
+Although the first code with the nested loops works it took longer to run because we are asking the program to read our 3,013 data points for each of our 12 stocks.  That means it has to read **36,156** cells!  In contrast, when we use the refactored code containing two separate loops which ran one after the other the program is only reading through the 3,013 data points once.  
+
 
 
