@@ -20,12 +20,27 @@ This is what will happen when we apply these instructions to the **first** ticke
     - If the row contains the **“AY”**, but the row above it does not, then set the value of the first closing price (variable: startingPrice) *(if not, do nothing)*
     - If the row contains the **"AY”**  but the row below it does not, then set the value for the last closing price (variable: endingPrice) *(if not, do nothing)*
   - Exit nested loop
-  - Record the values for ticker, totalVolume, and Return in the worksheet
+  - Record the values for ticker, totalVolume, and Return in the designated output worksheet
   - Run Same sequence on the next ticker in our array.
 
+In the refactored code below, we have created three more arrays--one for each of the three values we wanted to collect from the dataset for each ticker: **totalVolume, startingPrice, and endingPrice**
+![Three consecutive loops](https://github.com/murphyk2021/Stock-Analysis/blob/98db6244f6178bebac633ee859d80b318e913679/Challenge_VBA_Code.png)
+- In the **first for loop** we simply set the value for our totalVolume to 0.  This ensures that we get an accurate count when the second loop is complete.  
 
+- The **second for loop** is very similar to what we wrote in our first code. However, instead of recording the values on our output worksheet and running through the loop again for the next stock, we are simply storing the values for each stock in an array which we can reference later!
+
+- The **third for loop** records the information from our 4 arrays into the output worksheet.
+
+When we compare the two strategies, we can see that there is a marked difference in their total run time.
+
+**All Stocks 2017**
+![Comparison of run times for 2017](https://github.com/murphyk2021/Stock-Analysis/blob/1a81f29ec5d2fa9cc8a7a81263bb9fb787ec91e9/Resources/VBA_Challenge_2017comp.png)
+
+
+**All Stocks 2018**
+![Comparison of run times for 2018](https://github.com/murphyk2021/Stock-Analysis/blob/1a81f29ec5d2fa9cc8a7a81263bb9fb787ec91e9/Resources/VBA_Challenge_2018comp.png)
 ## Summary
-Although the first code with the nested loops works it took longer to run because we are asking the program to read our 3,013 data points for each of our 12 stocks.  That means it has to read **36,156** cells!  In contrast, when we use the refactored code containing two separate loops which ran one after the other the program is only reading through the 3,013 data points once.  
+Although the first code with the nested loops works well enough, it took longer to run because we are asking the program to read our 3,013 data points for each of our 12 stocks.  That means it has to read **36,156** cells!  In contrast, when we use the refactored code containing two separate loops which ran one after the other the program is only reading through the 3,013 data points once.  
 
 
 
