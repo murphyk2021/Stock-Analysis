@@ -48,7 +48,7 @@ When we compare the two strategies, both gave us the same output data.  With the
 ## Summary
 It is not unusual for our first attempt at creating or achieving something new to be a little unrefined.  However, once we have taken that first step towards success we can remove redundant or unnecessary steps and streamline the process.  This also applies to writing codes.  It may take some time to do, but will save us time and resources later!  
 
-Although the first code we created achieved the task we set out to do, it took longer to run because we were asking the program to read our 3,013 data points for each of our 12 stocks.  That means it has to read **36,156** cells!  In contrast, when we use the refactored code containing three separate loops which ran one after the other the program  only had to read through the 3,013 data points once.  If our dataset were to remain small, this may not be that big of a deal.  However, if our dataset were to grow, this could potentially become an issue!  
+Although the first code we created achieved the task we set out to do, it took longer to run because we were asking the program to read our 3,013 data points for each of our 12 stocks.  That means it had to read **36,156** cells!  In contrast, when we use the refactored code containing three separate loops which ran one after the other the program  only had to read through the 3,013 data points once.  If our dataset were to remain small, this may not be that big of a deal.  However, if our dataset were to grow, this could potentially become an issue!  
 
 
 
