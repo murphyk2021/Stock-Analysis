@@ -3,7 +3,7 @@
 ## Overview of Project
 In this module students were given a dataset which included information about how often 12 different stocks were traded and how much they cost on each day over the years of 2017 and 2018.  We created a macro using VBA to automatically read through the 3,013 rows of data in a year and extrapolate the first and last closing price of the stock DAQO, specifically, to determine the percent return for the year.  We also counted the total number of times it had been traded during the year.  This exercise introduced us to the basic logic behind **for loops** and **conditionals** in addition to introducing cell formatting through VBA.  We then added buttons to run our coded macros within a worksheet for user ease.
 
-The next activity we asked the program to look through all of the data and calculate the yearly percent return and total number of trades for each of the 12 different stocks.  This required us to create an array, or list, of our different stocks and expand our knowledge of for loops by creating **nested for loops**-loops inside of loops.  
+The next activity we asked the program to look through all of the data and calculate the yearly percent return and total number of trades for each of the 12 different stocks.  This required us to create an array, or list, of our different stocks and expand our knowledge of for loops by creating **nested for loops**-loops inside of loops. 
 
 Finally, in our challenge excercise we were asked to rewrite our code in such a way that it would run quicker and more efficiently.  One way to achieve that goal is to reduce the number of times that we are looping through each row of data.
 - - -
@@ -33,7 +33,7 @@ In the refactored code below, we have created three more arrays--one for each of
 
 [See source code](https://github.com/murphyk2021/Stock-Analysis/blob/b9dfdcf7c048faeb6bc90a4c79fb693442429637/VBA_Challenge.xlsm)
 - - -
-When we compare the two strategies, we can see that there is a marked difference in their total run time.
+When we compare the two strategies, both gave us the same output data.  With the additional formatting, it is easy to see that most of these stocks performed better in 2017 than they did in 2018!  Additionally, when we use a timer to measure how long it took for each code to run there was a marked difference between the two.
 
 **All Stocks 2017**
 ![Comparison of run times for 2017](https://github.com/murphyk2021/Stock-Analysis/blob/1a81f29ec5d2fa9cc8a7a81263bb9fb787ec91e9/Resources/VBA_Challenge_2017comp.png)
