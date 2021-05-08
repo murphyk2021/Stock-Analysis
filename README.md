@@ -1,9 +1,9 @@
 # Module 2: Stock Analysis Using VBA
 - - -
 ## Overview of Project
-In this module students were given a dataset which included information about how often 12 different stocks were traded and how much they cost on each day over the years of 2017 and 2018.  We created a macro using VBA to automatically read through the 3,013 rows of data in a year and extrapolate the first and last closing price of the stock DAQO, specifically, to determine the percent return for the year.  We also counted the total number of times it had been traded during the year.  This exercise introduced us to the basic logic behind *for loops* and *conditionals* in addition to introducing cell formatting through VBA.  We then added buttons to run our coded macros within a worksheet for user ease.
+In this module students were given a dataset which included information about how often 12 different stocks were traded and how much they cost on each day over the years of 2017 and 2018.  We created a macro using VBA to automatically read through the 3,013 rows of data in a year and extrapolate the first and last closing price of the stock DAQO, specifically, to determine the percent return for the year.  We also counted the total number of times it had been traded during the year.  This exercise introduced us to the basic logic behind **for loops** and **conditionals** in addition to introducing cell formatting through VBA.  We then added buttons to run our coded macros within a worksheet for user ease.
 
-The next activity we asked the program to look through all of the data and calculate the yearly percent return and total number of trades for each of the 12 different stocks.  This required us to create an array, or list, of our different stocks and expand our knowledge of for loops by creating *nested for loops*-loops inside of loops.  
+The next activity we asked the program to look through all of the data and calculate the yearly percent return and total number of trades for each of the 12 different stocks.  This required us to create an array, or list, of our different stocks and expand our knowledge of for loops by creating **nested for loops**-loops inside of loops.  
 
 Finally, in our challenge excercise we were asked to rewrite our code in such a way that it would run quicker and more efficiently.  One way to achieve that goal is to reduce the number of times that we are looping through each row of data.
 - - -
@@ -43,9 +43,9 @@ When we compare the two strategies, we can see that there is a marked difference
 ![Comparison of run times for 2018](https://github.com/murphyk2021/Stock-Analysis/blob/1a81f29ec5d2fa9cc8a7a81263bb9fb787ec91e9/Resources/VBA_Challenge_2018comp.png)
 - - -
 ## Summary
-It is not unusual for our first attempt at creating or achieving something new to be a little unrefined.  However, once we have taken that first step towards success we can remove redundant or unnecessary steps and streamline the process.  This also applies to writing codes.  
+It is not unusual for our first attempt at creating or achieving something new to be a little unrefined.  However, once we have taken that first step towards success we can remove redundant or unnecessary steps and streamline the process.  This also applies to writing codes.  It may take some time to do, but will save us time and resources later!  
 
-Although the first code we created achieved the task we set out to do, it took longer to run because we are asking the program to read our 3,013 data points for each of our 12 stocks.  That means it has to read **36,156** cells!  In contrast, when we use the refactored code containing two separate loops which ran one after the other the program is only reading through the 3,013 data points once.   If our dataset were to remain small, this may not be that big of a deal.  However, if our dataset were to grow, this could potentially become an issue.  
+Although the first code we created achieved the task we set out to do, it took longer to run because we were asking the program to read our 3,013 data points for each of our 12 stocks.  That means it has to read **36,156** cells!  In contrast, when we use the refactored code containing three separate loops which ran one after the other the program  only had to read through the 3,013 data points once.  If our dataset were to remain small, this may not be that big of a deal.  However, if our dataset were to grow, this could potentially become an issue!  
 
 
 
